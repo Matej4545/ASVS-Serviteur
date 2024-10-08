@@ -1,6 +1,7 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import asvs from "../asvs_v4.0.3.json";
+import { ASVSAuditResult } from "../types/types";
 
 //Global
 export function cn(...inputs: ClassValue[]) {
@@ -36,7 +37,7 @@ export function isRequiredForLevel(item: any, level: number)
 }
 
 // Function used to replace md link into HTML link
-const regex = /\(\[(\w+)\]\((\S+)\)\)/gm;
+const regex = /\(\[([\w|,|\ ]+)\]\((\S+)\)\)/gm;
 export function replaceLink(description: string) {
   const textWithoutLink = description.replace(regex, "")
   const matchGroup = regex.exec(description)
@@ -56,10 +57,10 @@ export function filterAsvsByLevel(level: number) {
   }));
 }
 
-export function getInitialProgress() {
+export function getInitialResults() {
   return asvs.Requirements.flatMap((item) =>
     item.Items.flatMap((i) =>
-      i.Items.map((i) => ({ Shortcode: i.Shortcode, Checked: false }))
+      i.Items.map((i) => ({ shortcode: i.Shortcode, checked: false, note: "" } as ASVSAuditResult))
     )
   );
 }
