@@ -3,11 +3,7 @@ import { useLocalStorage } from "../../lib/localStorageProvider";
 import Modal from "../modal/modal";
 import Tooltip from "../tooltip/tooltip";
 
-interface INavbarProps {
-  handleLevelSelect?: (level: number) => void;
-}
-
-function Navbar(props: INavbarProps) {
+function Navbar() {
   const { data, clearData } = useLocalStorage();
   return (
     <div id="banner" className="h-12 border-b-2 w-full ">
