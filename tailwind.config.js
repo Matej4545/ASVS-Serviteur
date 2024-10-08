@@ -6,8 +6,8 @@ export default {
   ],
   theme: {
     extend: {},
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+        fontFamily: {
+      sans: ['Roboto', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
   },
