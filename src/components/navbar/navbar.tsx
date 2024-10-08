@@ -10,7 +10,7 @@ function Navbar() {
       <div className="max-w-screen-xl mx-auto flex gap-1 py-4 px-1 w-full h-full gap-4 px-6">
         <div className="grow items-center flex gap-1">
           <img
-            src="/asvs-serviteur.svg"
+            src="./asvs-serviteur.svg"
             className="h-14"
             style={{ color: "red" }}
           />
