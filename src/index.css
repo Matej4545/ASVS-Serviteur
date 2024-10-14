@@ -16,4 +16,39 @@
   a {
     @apply text-blue-500 underline
   }
+  table {
+    @apply min-w-full divide-y divide-gray-400 border border-gray-400
+  }
+
+  .table {
+    @apply border border-gray-400 text-sm
+  }
+
+  tbody {
+    @apply divide-y divide-gray-400
+  }
+
+  tr {
+    @apply divide-x divide-gray-400
+  }
+
+  th {
+    @apply px-1 py-1 text-start font-medium text-black text-sm
+  }
+
+  td {
+    @apply px-1 py-1 whitespace-nowrap text-black text-sm
+  }
+
+  td:last-child {
+    @apply text-right
+  }
+}
+
+@media print {
+  @page { size: A4 }
+  
+  .html {
+    font-size: "10px";
+  }
 }
