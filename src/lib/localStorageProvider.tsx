@@ -3,7 +3,7 @@ import { ASVSAudit, ASVSAuditResult } from '../types/types';
 import { getInitialResults } from './helpers';
 
 // Define the local storage key for easier reference
-const LOCAL_STORAGE_KEY = 'ASVSServiteurDataTest';
+const LOCAL_STORAGE_KEY = 'ASVSServiteurData';
 
 interface LocalStorageContextType {
     data: ASVSAudit | null;
