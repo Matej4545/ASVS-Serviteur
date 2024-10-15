@@ -34,7 +34,7 @@ function Audit() {
               total={c.Items.length}
               completed={
                 progress.filter(
-                  (p) => p.shortcode.startsWith(c.Shortcode) && p.checked
+                  (p) => p.shortcode.startsWith(c.Shortcode) && (p.checked || p.NA)
                 ).length
               }
               className="w-1/4"
@@ -107,7 +107,7 @@ function Audit() {
         <Progress
           className="grow"
           total={GetNumberOfActiveControls(controls)}
-          completed={progress.filter((p) => p.checked).length}
+          completed={progress.filter((p) => p.checked || p.NA).length}
           showNumbers
         />
       </div>
