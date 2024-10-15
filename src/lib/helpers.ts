@@ -64,3 +64,7 @@ export function getInitialResults() {
     )
   );
 }
+
+export function findAuditRes(progress: ASVSAuditResult[], shortcode: string) {
+  return progress.find((p) => p.shortcode === shortcode)
+}

@@ -1,5 +1,5 @@
 import { ASVSAudit } from "../types/types";
-import { filterAsvsByLevel } from "./helpers";
+import { filterAsvsByLevel, findAuditRes } from "./helpers";
 
 export function getResultForLevel(data: ASVSAudit) {
   const controlsForLevel = filterAsvsByLevel(data.targetLevel);
@@ -7,14 +7,14 @@ export function getResultForLevel(data: ASVSAudit) {
     i1.Items.flatMap((i2) =>
       i2.Items.map((i3) => ({
         ...i3,
-        ...data.results.find((d) => d.shortcode === i3.Shortcode),
+        ...findAuditRes(data.results, i3.Shortcode),
       }))
     )
   );
 }
 
 export function getTotalScore(data: any[]) {
-  return data.filter((d) => d.checked).length;
+  return data.filter((d) => d.checked && !d.NA).length;
 }
 
 export function getResultForCategories(data: ASVSAudit) {
@@ -24,16 +24,17 @@ export function getResultForCategories(data: ASVSAudit) {
     name: i1.ShortName,
     items: i1.Items.map((i2) => ({
       shortcode: i2.Shortcode,
-      checked: i2.Items.reduce(
+      checked: i2.Items.filter(i3 => !findAuditRes(data.results, i3.Shortcode)!.NA).reduce(
         (acc, i3) =>
-          data.results.find((d) => d.shortcode === i3.Shortcode)!.checked
+          findAuditRes(data.results, i3.Shortcode)!.checked
             ? acc+=1
             : acc,
         0
       ),
-      total: i2.Items.length
+      total: i2.Items.filter((i3) => !findAuditRes(data.results, i3.Shortcode)!.NA).length
     })),
   }));
+  console.log({enriched})
   return enriched
 }
 

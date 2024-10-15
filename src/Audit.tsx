@@ -4,6 +4,7 @@ import ControlRow from "./components/ControlRow";
 import Progress from "./components/progress/Progress";
 import {
   filterAsvsByLevel,
+  findAuditRes,
   getInitialResults,
   getLevelLabel,
   GetNumberOfActiveControls,
@@ -31,10 +32,16 @@ function Audit() {
           key={c.Shortcode}
           progressComponent={
             <Progress
-              total={c.Items.length}
+              total={
+                c.Items.filter(
+                  (c: any) => !findAuditRes(progress, c.Shortcode)!.NA
+                ).length
+              }
               completed={
-                progress.filter(
-                  (p) => p.shortcode.startsWith(c.Shortcode) && (p.checked || p.NA)
+                c.Items.filter(
+                  (c: any) =>
+                    !findAuditRes(progress, c.Shortcode)!.NA &&
+                    findAuditRes(progress, c.Shortcode)!.checked
                 ).length
               }
               className="w-1/4"
@@ -84,7 +91,6 @@ function Audit() {
   }
 
   function formatItems(items: any[]) {
-  
     return items.map((i) => (
       <ControlRow
         key={i.Shortcode}
@@ -111,7 +117,14 @@ function Audit() {
           showNumbers
         />
       </div>
-      {controls.map((r) => <div><h1 className="ps-3 pt-3 text-orange-500">{r.Shortcode} - {r.ShortName}</h1>{formatCategories(r.Items)}</div>)}
+      {controls.map((r) => (
+        <div>
+          <h1 className="ps-3 pt-3 text-orange-500">
+            {r.Shortcode} - {r.ShortName}
+          </h1>
+          {formatCategories(r.Items)}
+        </div>
+      ))}
     </div>
   );
 }
