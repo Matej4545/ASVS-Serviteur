@@ -63,7 +63,7 @@ function Report() {
               (cat) => cat.items.filter((cat) => cat.total != 0).length != 0
             )
             .flatMap((cat) => (
-              <div className="shrink-0 grow-0 w-full">
+              <div key={cat.shortcode} className="shrink-0 grow-0 w-full">
                 <div className="table w-full h-full">
                   <div className="p-1 border-b border-gray-400 w-full">
                     <span className="font-bold text-left">
@@ -85,7 +85,6 @@ function Report() {
                       ))}
                   </div>
                   <div className="grow-0">
-                    <td></td>
                   </div>
                 </div>
               </div>
@@ -105,7 +104,7 @@ function Report() {
         </thead>
         <tbody>
           {results.map((r) => (
-            <tr>
+            <tr key={r.Shortcode}>
               <td className="w-24 text-center">{r.shortcode}</td>
               <td className="text-wrap max-w-md">
                 {replaceLink(r.Description).textWithoutLink}

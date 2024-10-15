@@ -10,14 +10,6 @@ export function cn(...inputs: ClassValue[]) {
 
 //ASVS related
 
-export function GetNumberOfActiveControls(controls: any) {
-    return controls.flatMap((item: any) =>
-        item.Items.flatMap((i: any) =>
-          i.Items.map((i: any) => ({ Shortcode: i.Shortcode, Checked: false }))
-        )
-      ).length
-}
-
 export function getLevelLabel(item: any) {
   return item.L1.Required ? "L1" : item.L2.Required ? "L2" : "L3"
 }

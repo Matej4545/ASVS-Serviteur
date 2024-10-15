@@ -6,8 +6,7 @@ import {
   filterAsvsByLevel,
   findAuditRes,
   getInitialResults,
-  getLevelLabel,
-  GetNumberOfActiveControls,
+  getLevelLabel
 } from "./lib/helpers";
 import { useLocalStorage } from "./lib/localStorageProvider";
 import { ASVSAuditResult } from "./types/types";
@@ -21,7 +20,7 @@ function Audit() {
 
   useEffect(() => {
     updateResults(progress as ASVSAuditResult[]);
-  }, [progress]);
+  }, [progress, updateResults]);
 
   function formatCategories(categories: any[]) {
     return categories
@@ -112,8 +111,10 @@ function Audit() {
         <span>Total progress:</span>
         <Progress
           className="grow"
-          total={GetNumberOfActiveControls(controls)}
-          completed={progress.filter((p) => p.checked || p.NA).length}
+          total={controls.reduce((acc, cat) => acc += cat.Items.reduce((acc, c) => acc += c.Items.filter(
+            (c: any) => !findAuditRes(progress, c.Shortcode)!.NA
+          ).length, 0), 0)}
+          completed={progress.filter((p) => p.checked && !p.NA).length}
           showNumbers
         />
       </div>

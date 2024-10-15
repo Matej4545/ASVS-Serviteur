@@ -34,7 +34,6 @@ export function getResultForCategories(data: ASVSAudit) {
       total: i2.Items.filter((i3) => !findAuditRes(data.results, i3.Shortcode)!.NA).length
     })),
   }));
-  console.log({enriched})
   return enriched
 }
 
