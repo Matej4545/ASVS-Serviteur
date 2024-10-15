@@ -71,7 +71,20 @@ function Audit() {
     );
   }
 
+  function handleNA(shortcode: string): void {
+    setProgress(
+      progress.map((p) => {
+        if (p.shortcode == shortcode) {
+          return { ...p, NA: !p.NA };
+        } else {
+          return p;
+        }
+      })
+    );
+  }
+
   function formatItems(items: any[]) {
+  
     return items.map((i) => (
       <ControlRow
         key={i.Shortcode}
@@ -80,6 +93,7 @@ function Audit() {
         description={i.Description}
         requiredFrom={getLevelLabel(i)}
         handleChecked={handleChecked}
+        handleNA={handleNA}
         handleNote={(note) => handleNote(i.Shortcode, note)}
         cwe={i.CWE}
         nist={i.NIST}

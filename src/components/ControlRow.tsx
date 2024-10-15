@@ -13,6 +13,7 @@ interface IControlRowProps {
   nist?: string;
   handleChecked: (shortcode: string) => void;
   handleNote: (note: string) => void;
+  handleNA: (shortcode: string) => void;
 }
 
 function ControlRow(props: IControlRowProps) {
@@ -25,6 +26,7 @@ function ControlRow(props: IControlRowProps) {
     cwe,
     nist,
     handleNote,
+    handleNA
   } = props;
   const [checked, setChecked] = useState(initialState.checked);
   const [NA, setNA] = useState(initialState.NA);
@@ -92,7 +94,7 @@ function ControlRow(props: IControlRowProps) {
             type="checkbox"
             className="w-5 h-5"
             onClick={() => {
-              setNA(!NA);
+              handleNA(shortCode), setNA(!NA);
             }}
             checked={NA}
           />{" "}
