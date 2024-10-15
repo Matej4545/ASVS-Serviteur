@@ -3,10 +3,10 @@ import Collapsible from "./components/Collapsible";
 import ControlRow from "./components/ControlRow";
 import Progress from "./components/progress/Progress";
 import {
-    filterAsvsByLevel,
-    getInitialResults,
-    getLevelLabel,
-    GetNumberOfActiveControls,
+  filterAsvsByLevel,
+  getInitialResults,
+  getLevelLabel,
+  GetNumberOfActiveControls,
 } from "./lib/helpers";
 import { useLocalStorage } from "./lib/localStorageProvider";
 import { ASVSAuditResult } from "./types/types";
@@ -75,13 +75,10 @@ function Audit() {
     return items.map((i) => (
       <ControlRow
         key={i.Shortcode}
-        initialChecked={
-          progress.find((p) => p.shortcode === i.Shortcode)!.checked
-        }
+        initialState={progress.find((p) => p.shortcode === i.Shortcode)!}
         shortCode={i.Shortcode}
         description={i.Description}
         requiredFrom={getLevelLabel(i)}
-        initialNotes={progress.find((p) => p.shortcode === i.Shortcode)!.note}
         handleChecked={handleChecked}
         handleNote={(note) => handleNote(i.Shortcode, note)}
         cwe={i.CWE}
