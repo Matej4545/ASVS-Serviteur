@@ -3,10 +3,10 @@ import Collapsible from "./components/Collapsible";
 import ControlRow from "./components/ControlRow";
 import Progress from "./components/progress/Progress";
 import {
-    filterAsvsByLevel,
-    getInitialResults,
-    getLevelLabel,
-    GetNumberOfActiveControls,
+  filterAsvsByLevel,
+  findAuditRes,
+  getInitialResults,
+  getLevelLabel
 } from "./lib/helpers";
 import { useLocalStorage } from "./lib/localStorageProvider";
 import { ASVSAuditResult } from "./types/types";
@@ -20,7 +20,7 @@ function Audit() {
 
   useEffect(() => {
     updateResults(progress as ASVSAuditResult[]);
-  }, [progress]);
+  }, [progress, updateResults]);
 
   function formatCategories(categories: any[]) {
     return categories
@@ -31,10 +31,16 @@ function Audit() {
           key={c.Shortcode}
           progressComponent={
             <Progress
-              total={c.Items.length}
+              total={
+                c.Items.filter(
+                  (c: any) => !findAuditRes(progress, c.Shortcode)!.NA
+                ).length
+              }
               completed={
-                progress.filter(
-                  (p) => p.shortcode.startsWith(c.Shortcode) && p.checked
+                c.Items.filter(
+                  (c: any) =>
+                    !findAuditRes(progress, c.Shortcode)!.NA &&
+                    findAuditRes(progress, c.Shortcode)!.checked
                 ).length
               }
               className="w-1/4"
@@ -71,18 +77,28 @@ function Audit() {
     );
   }
 
+  function handleNA(shortcode: string): void {
+    setProgress(
+      progress.map((p) => {
+        if (p.shortcode == shortcode) {
+          return { ...p, NA: !p.NA };
+        } else {
+          return p;
+        }
+      })
+    );
+  }
+
   function formatItems(items: any[]) {
     return items.map((i) => (
       <ControlRow
         key={i.Shortcode}
-        initialChecked={
-          progress.find((p) => p.shortcode === i.Shortcode)!.checked
-        }
+        initialState={progress.find((p) => p.shortcode === i.Shortcode)!}
         shortCode={i.Shortcode}
         description={i.Description}
         requiredFrom={getLevelLabel(i)}
-        initialNotes={progress.find((p) => p.shortcode === i.Shortcode)!.note}
         handleChecked={handleChecked}
+        handleNA={handleNA}
         handleNote={(note) => handleNote(i.Shortcode, note)}
         cwe={i.CWE}
         nist={i.NIST}
@@ -95,12 +111,21 @@ function Audit() {
         <span>Total progress:</span>
         <Progress
           className="grow"
-          total={GetNumberOfActiveControls(controls)}
-          completed={progress.filter((p) => p.checked).length}
+          total={controls.reduce((acc, cat) => acc += cat.Items.reduce((acc, c) => acc += c.Items.filter(
+            (c: any) => !findAuditRes(progress, c.Shortcode)!.NA
+          ).length, 0), 0)}
+          completed={progress.filter((p) => p.checked && !p.NA).length}
           showNumbers
         />
       </div>
-      {controls.map((r) => <div><h1 className="ps-3 pt-3 text-orange-500">{r.Shortcode} - {r.ShortName}</h1>{formatCategories(r.Items)}</div>)}
+      {controls.map((r) => (
+        <div>
+          <h1 className="ps-3 pt-3 text-orange-500">
+            {r.Shortcode} - {r.ShortName}
+          </h1>
+          {formatCategories(r.Items)}
+        </div>
+      ))}
     </div>
   );
 }

@@ -10,14 +10,6 @@ export function cn(...inputs: ClassValue[]) {
 
 //ASVS related
 
-export function GetNumberOfActiveControls(controls: any) {
-    return controls.flatMap((item: any) =>
-        item.Items.flatMap((i: any) =>
-          i.Items.map((i: any) => ({ Shortcode: i.Shortcode, Checked: false }))
-        )
-      ).length
-}
-
 export function getLevelLabel(item: any) {
   return item.L1.Required ? "L1" : item.L2.Required ? "L2" : "L3"
 }
@@ -63,4 +55,8 @@ export function getInitialResults() {
       i.Items.map((i) => ({ shortcode: i.Shortcode, checked: false, note: "" } as ASVSAuditResult))
     )
   );
+}
+
+export function findAuditRes(progress: ASVSAuditResult[], shortcode: string) {
+  return progress.find((p) => p.shortcode === shortcode)
 }

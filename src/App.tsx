@@ -3,16 +3,16 @@ import Navbar from "./components/navbar/navbar";
 import Report from "./components/report/report";
 import { useLocalStorage } from "./lib/localStorageProvider";
 import Projects from "./Projects";
-const reportPath = "report"
+const reportParam = "report"
 
 function App() {
   const { data } = useLocalStorage();
-  const location = window.location.pathname;
+  const showReport = new URLSearchParams(window.location.search).get(reportParam) === "true";
   return (
     <>
       <Navbar />
       <main>
-        {location.includes(reportPath) ? <Report /> :
+        {showReport ? <Report /> :
         data ? <Audit /> : <Projects />}
       </main>
     </>

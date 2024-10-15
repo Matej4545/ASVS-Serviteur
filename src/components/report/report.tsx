@@ -1,4 +1,4 @@
-import { Check, TriangleAlert, X } from "lucide-react";
+import { ArrowLeftCircle, Check, Printer, TriangleAlert, X } from "lucide-react";
 import { getLevelLabel, replaceLink } from "../../lib/helpers";
 import { useLocalStorage } from "../../lib/localStorageProvider";
 import {
@@ -24,7 +24,11 @@ function Report() {
   const results = getResultForLevel(data);
   const catResults = getResultForCategories(data);
   return (
-    <div className="screen:p-8">
+    <div className="screen:px-8">
+      <div className="print:hidden max-w-lg border border-orange-600 rounded-lg p-3 mb-8 text-center text-lg mx-auto">
+        This is printable version of the OWASP ASVS report. You can print it to PDF for export.<div className="flex gap-3 place-content-between px-6 py-2"><a href="/" className="flex gap-2 justify-center w-fit items-center border rounded-md px-2 py-1 no-underline	text-black"><ArrowLeftCircle /> Go back </a><button onClick={() => window.print()} className="flex gap-2 justify-center  items-center border rounded-md px-2 py-1"> Print <Printer /></button></div>
+      </div>
+      <div id="report" className="screen:border screen:border-grey-100 screen:p-3 screen:rounded-lg">
       <div id="heading" className="pb-3">
         <div className="text-3xl pb-3">
           OWASP ASVS report | <span className="font-bold">{data.name}</span>
@@ -59,7 +63,7 @@ function Report() {
               (cat) => cat.items.filter((cat) => cat.total != 0).length != 0
             )
             .flatMap((cat) => (
-              <div className="shrink-0 grow-0 w-full">
+              <div key={cat.shortcode} className="shrink-0 grow-0 w-full">
                 <div className="table w-full h-full">
                   <div className="p-1 border-b border-gray-400 w-full">
                     <span className="font-bold text-left">
@@ -81,7 +85,6 @@ function Report() {
                       ))}
                   </div>
                   <div className="grow-0">
-                    <td></td>
                   </div>
                 </div>
               </div>
@@ -101,14 +104,14 @@ function Report() {
         </thead>
         <tbody>
           {results.map((r) => (
-            <tr>
+            <tr key={r.Shortcode}>
               <td className="w-24 text-center">{r.shortcode}</td>
               <td className="text-wrap max-w-md">
                 {replaceLink(r.Description).textWithoutLink}
               </td>
               <td className="w-12 text-center">{getLevelLabel(r)}</td>
               <td className="w-12">
-                {r.checked ? (
+                {r.NA ? <p className="font-bold text-center w-full">N/A</p> : r.checked ? (
                   <Check className="text-green-600 mx-auto" />
                 ) : (
                   <X className="text-red-600 mx-auto" />
@@ -119,7 +122,9 @@ function Report() {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
+
   );
 }
 
