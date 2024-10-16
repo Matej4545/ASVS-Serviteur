@@ -20,7 +20,7 @@ function Audit() {
 
   useEffect(() => {
     updateResults(progress as ASVSAuditResult[]);
-  }, [progress, updateResults]);
+  }, [progress]);
 
   function formatCategories(categories: any[]) {
     return categories

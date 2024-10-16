@@ -20,6 +20,14 @@ function Projects() {
         loadExistingProject(data)
     }
 
+  async function handleFileSelected(e: any): void {
+    e.preventDefault();
+    if (e.target.files) {
+      setData(await e.target.files[0].text());
+      loadExistingProject(data)
+    }
+  }
+
     return(<div className="">
     <form action="" className="border rounded-lg flex flex-col p-6 max-w-lg mx-auto gap-1">
     <h1 className="pb-8">Create new project</h1>
@@ -46,7 +54,7 @@ function Projects() {
     <h1 className="pb-8">Load data from existing project</h1>
     <label htmlFor="content">Copy and paste progress down below</label>
         <textarea  name="content" placeholder="Project data..." value={data} onChange={(e) => setData(e.target.value)} className="border rounded-sm p-1 min-w-24 min-h-48"/>
-        
+          <input type="file" placeholder="Or select file" name="file" onChange={e => handleFileSelected(e)}></input>
           <button className="border rounded-md w-fit px-2 mt-6 py-1 hover:bg-orange-600 hover:text-white transition mx-auto" onClick={handleLoad}>Continue where I left off 🕐</button>
     </form>
 

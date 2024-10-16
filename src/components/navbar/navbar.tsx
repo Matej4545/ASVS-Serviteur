@@ -1,7 +1,8 @@
-import { Download, Scroll } from "lucide-react";
+import { Scroll } from "lucide-react";
 import { useLocalStorage } from "../../lib/localStorageProvider";
 import Modal from "../modal/modal";
 import Tooltip from "../tooltip/tooltip";
+import FileExport from "./fileExport";
 
 function Navbar() {
   const { data, clearData } = useLocalStorage();
@@ -31,18 +32,7 @@ function Navbar() {
             />
             <Tooltip text="Audit report"><a href="?report=true"><Scroll /></a></Tooltip>
             <div>
-              <Tooltip text="Export as JSON">
-                <a
-                  href={`data:text/json;charset=utf-8,${encodeURIComponent(
-                    JSON.stringify(data)
-                  )}`}
-                  download={`ASVS Audit - ${data.name}_${
-                    data.date && new Date(data.date).toLocaleDateString()
-                  }.json`}
-                >
-                  <Download className="text-black" onClick={() => {}} />
-                </a>
-              </Tooltip>
+              <FileExport data={data}/>
             </div>
           </>
         )}
