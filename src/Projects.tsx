@@ -20,7 +20,7 @@ function Projects() {
         loadExistingProject(data)
     }
 
-  async function handleFileSelected(e: any): void {
+  async function handleFileSelected(e: any): Promise<void> {
     e.preventDefault();
     if (e.target.files) {
       setData(await e.target.files[0].text());
