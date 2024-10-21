@@ -1,12 +1,15 @@
 import { ArrowLeftCircle, Check, Printer, TriangleAlert, X } from "lucide-react";
-import { getLevelLabel, replaceLink } from "../../lib/helpers";
+import { cn, getLevelLabel, replaceLink } from "../../lib/helpers";
 import { useLocalStorage } from "../../lib/localStorageProvider";
 import {
+  generateRadarChartData,
+  getColorForResult,
   getPercent,
   getResultForCategories,
   getResultForLevel,
   getTotalScore,
 } from "../../lib/reportHelpers";
+import RadarChart from "./radarChart";
 
 function Report() {
   const { data } = useLocalStorage();
@@ -33,7 +36,8 @@ function Report() {
         <div className="text-3xl pb-3">
           OWASP ASVS report | <span className="font-bold">{data.name}</span>
         </div>
-        <table className="min-w-[30rem]">
+        <div className="grid grid-cols-3 gap-4 justify-end mb-4">
+        <table className="h-fit">
           <thead>
             <tr>
               <th scope="col" className="w-32">
@@ -49,14 +53,24 @@ function Report() {
             <tr>
               <td className="text-center">L{data.targetLevel}</td>
               <td>{new Date(data.date).toDateString()}</td>
-              <td className="text-right">
+              <td className={cn("text-right", getColorForResult(getTotalScore(results), results.length))}>
                 {getTotalScore(results)} / {results.length} ({" "}
                 {getPercent(getTotalScore(results), results.length)} %)
               </td>
             </tr>
           </tbody>
         </table>
-        <h2>Summary per category</h2>
+
+        <div className="col-span-2 justify-self-end w-full aspect-square	max-w-[30rem]">
+        <RadarChart data={generateRadarChartData(data)} />
+
+        </div>
+        </div>
+        
+        
+                  <hr />
+                  <div className="pagebreak"></div>
+        <h2 className="mb-2">Summary per category</h2>
         <div className="grid grid-cols-4 gap-2">
           {catResults
             .filter(
@@ -71,13 +85,13 @@ function Report() {
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-3 text-center divide-y gap-y-1">
+                  <div className="grid grid-cols-3 text-center divide-y ">
                     {cat.items
                       .filter((c) => c.total != 0)
                       .map((c) => (
                         <>
-                          <span >{c.shortcode}</span>
-                          <span className="col-span-2">
+                          <span className={getColorForResult(c.checked, c.total)}>{c.shortcode}</span>
+                          <span className={cn("col-span-2 py-1", getColorForResult(c.checked, c.total))}>
                             {c.checked} / {c.total} (
                             {getPercent(c.checked, c.total)} %)
                           </span>
@@ -91,7 +105,8 @@ function Report() {
             ))}
         </div>
       </div>
-      <h2>Details</h2>
+      <hr />
+      <h2 className="mb-2">Details</h2>
       <table id="detail">
         <thead>
           <tr>

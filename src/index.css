@@ -48,6 +48,8 @@
 @media print {
   @page { size: A4 }
   
+  .pagebreak { page-break-before: always; }
+  
   .html {
     font-size: "10px";
   }
