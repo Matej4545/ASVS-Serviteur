@@ -41,6 +41,10 @@ export function getPercent(checked: number, total: number) {
   return (checked / total * 100).toFixed(1)
 }
 
+
+export function getFlatResultPerCategory(result: ASVSAudit) {
+ return getResultForCategories(result).map(r => r.items.reduce((acc, item) => {return {checked: acc.checked + item.checked, total: acc.total + item.total}}, {checked: 0, total: 0}));
+}
 /***
  * Function will generate a percentage of checked controls for each ASVS category based on targeted level
  */
@@ -48,8 +52,7 @@ export function generateRadarChartData(result: ASVSAudit) {
 
   const filteredASVS = filterAsvsByLevel(result.targetLevel);
   const labels = filteredASVS.flatMap(c => c.ShortName)
-  const resultsForCategory = getResultForCategories(result).map(r => r.items.reduce((acc, item) => {return {checked: acc.checked + item.checked, total: acc.total + item.total}}, {checked: 0, total: 0}));
-  const chartData = resultsForCategory.map(r => r.total ? getPercent(r.checked, r.total) : 100)
+  const chartData = getFlatResultPerCategory(result).map(r => r.total ? getPercent(r.checked, r.total) : 100)
   console.log(chartData)
   const data = {
     labels: labels,

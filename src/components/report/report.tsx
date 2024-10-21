@@ -4,10 +4,11 @@ import { useLocalStorage } from "../../lib/localStorageProvider";
 import {
   generateRadarChartData,
   getColorForResult,
+  getFlatResultPerCategory,
   getPercent,
   getResultForCategories,
   getResultForLevel,
-  getTotalScore,
+  getTotalScore
 } from "../../lib/reportHelpers";
 import RadarChart from "./radarChart";
 
@@ -36,7 +37,7 @@ function Report() {
         <div className="text-3xl pb-3">
           OWASP ASVS report | <span className="font-bold">{data.name}</span>
         </div>
-        <div className="grid grid-cols-3 gap-4 justify-end mb-4">
+        <div className="grid grid-cols-3 gap-4 justify-end items-start mb-4">
         <table className="h-fit">
           <thead>
             <tr>
@@ -61,9 +62,28 @@ function Report() {
           </tbody>
         </table>
 
-        <div className="col-span-2 justify-self-end w-full aspect-square	max-w-[30rem]">
+        <div className="col-span-2 row-span-2 justify-self-end w-full aspect-square	max-w-lg">
         <RadarChart data={generateRadarChartData(data)} />
 
+        </div>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <td>
+                  Category
+                </td>
+                <td>
+                  Checked controls
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                getFlatResultPerCategory(data).map((d, i) => <tr><td>{catResults[i].name}</td><td className={getColorForResult(d.checked, d.total)}>{d.total ? `${d.checked} / ${d.total} (${getPercent(d.checked, d.total)} %)` : "no controls"}</td></tr>)
+              }
+            </tbody>
+          </table>
         </div>
         </div>
         
