@@ -26,7 +26,7 @@ function ControlRow(props: IControlRowProps) {
     cwe,
     nist,
     handleNote,
-    handleNA
+    handleNA,
   } = props;
   const [checked, setChecked] = useState(initialState.checked);
   const [NA, setNA] = useState(initialState.NA);
@@ -37,7 +37,7 @@ function ControlRow(props: IControlRowProps) {
     <div
       className={cn(
         "my-1 grid grid-cols-12 items-center rounded-lg px-2 bg-slate-200 py-2 ",
-        NA && "line-through bg-slate-100 text-slate-300"
+        NA && "line-through bg-slate-100 text-slate-300",
       )}
     >
       <p className="break-all">{shortCode}</p>

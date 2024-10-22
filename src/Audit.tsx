@@ -6,7 +6,7 @@ import {
   filterAsvsByLevel,
   findAuditRes,
   getInitialResults,
-  getLevelLabel
+  getLevelLabel,
 } from "./lib/helpers";
 import { useLocalStorage } from "./lib/localStorageProvider";
 import { ASVSAuditResult } from "./types/types";
@@ -15,7 +15,7 @@ function Audit() {
   const { data, updateResults } = useLocalStorage();
   const controls = filterAsvsByLevel((data && data.targetLevel) || 3);
   const [progress, setProgress] = useState(
-    data ? data.results : getInitialResults()
+    data ? data.results : getInitialResults(),
   );
 
   useEffect(() => {
@@ -33,14 +33,14 @@ function Audit() {
             <Progress
               total={
                 c.Items.filter(
-                  (c: any) => !findAuditRes(progress, c.Shortcode)!.NA
+                  (c: any) => !findAuditRes(progress, c.Shortcode)!.NA,
                 ).length
               }
               completed={
                 c.Items.filter(
                   (c: any) =>
                     !findAuditRes(progress, c.Shortcode)!.NA &&
-                    findAuditRes(progress, c.Shortcode)!.checked
+                    findAuditRes(progress, c.Shortcode)!.checked,
                 ).length
               }
               className="w-1/4"
@@ -61,7 +61,7 @@ function Audit() {
         } else {
           return p;
         }
-      })
+      }),
     );
   }
 
@@ -73,7 +73,7 @@ function Audit() {
         } else {
           return p;
         }
-      })
+      }),
     );
   }
 
@@ -85,7 +85,7 @@ function Audit() {
         } else {
           return p;
         }
-      })
+      }),
     );
   }
 
@@ -111,9 +111,17 @@ function Audit() {
         <span>Total progress:</span>
         <Progress
           className="grow"
-          total={controls.reduce((acc, cat) => acc += cat.Items.reduce((acc, c) => acc += c.Items.filter(
-            (c: any) => !findAuditRes(progress, c.Shortcode)!.NA
-          ).length, 0), 0)}
+          total={controls.reduce(
+            (acc, cat) =>
+              (acc += cat.Items.reduce(
+                (acc, c) =>
+                  (acc += c.Items.filter(
+                    (c: any) => !findAuditRes(progress, c.Shortcode)!.NA,
+                  ).length),
+                0,
+              )),
+            0,
+          )}
           completed={progress.filter((p) => p.checked && !p.NA).length}
           showNumbers
         />

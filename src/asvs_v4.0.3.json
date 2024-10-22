@@ -50,9 +50,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1053
-              ],
+              "CWE": [1053],
               "NIST": []
             },
             {
@@ -71,9 +69,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1110
-              ],
+              "CWE": [1110],
               "NIST": []
             },
             {
@@ -92,9 +88,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1059
-              ],
+              "CWE": [1059],
               "NIST": []
             },
             {
@@ -113,9 +107,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1059
-              ],
+              "CWE": [1059],
               "NIST": []
             },
             {
@@ -134,9 +126,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                637
-              ],
+              "CWE": [637],
               "NIST": []
             },
             {
@@ -155,9 +145,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                637
-              ],
+              "CWE": [637],
               "NIST": []
             }
           ]
@@ -183,9 +171,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                250
-              ],
+              "CWE": [250],
               "NIST": []
             },
             {
@@ -204,9 +190,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                306
-              ],
+              "CWE": [306],
               "NIST": []
             },
             {
@@ -225,9 +209,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                306
-              ],
+              "CWE": [306],
               "NIST": []
             },
             {
@@ -246,9 +228,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                306
-              ],
+              "CWE": [306],
               "NIST": []
             }
           ]
@@ -280,9 +260,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                602
-              ],
+              "CWE": [602],
               "NIST": []
             },
             {
@@ -339,9 +317,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                284
-              ],
+              "CWE": [284],
               "NIST": []
             },
             {
@@ -360,9 +336,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                275
-              ],
+              "CWE": [275],
               "NIST": []
             }
           ]
@@ -388,9 +362,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1029
-              ],
+              "CWE": [1029],
               "NIST": []
             },
             {
@@ -409,9 +381,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                502
-              ],
+              "CWE": [502],
               "NIST": []
             },
             {
@@ -430,9 +400,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                602
-              ],
+              "CWE": [602],
               "NIST": []
             },
             {
@@ -451,9 +419,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                116
-              ],
+              "CWE": [116],
               "NIST": []
             }
           ]
@@ -479,9 +445,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                320
-              ],
+              "CWE": [320],
               "NIST": []
             },
             {
@@ -500,9 +464,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                320
-              ],
+              "CWE": [320],
               "NIST": []
             },
             {
@@ -521,9 +483,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                320
-              ],
+              "CWE": [320],
               "NIST": []
             },
             {
@@ -542,9 +502,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                320
-              ],
+              "CWE": [320],
               "NIST": []
             }
           ]
@@ -570,9 +528,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1009
-              ],
+              "CWE": [1009],
               "NIST": []
             },
             {
@@ -662,9 +618,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                319
-              ],
+              "CWE": [319],
               "NIST": []
             },
             {
@@ -683,9 +637,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                295
-              ],
+              "CWE": [295],
               "NIST": []
             }
           ]
@@ -711,9 +663,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                284
-              ],
+              "CWE": [284],
               "NIST": []
             }
           ]
@@ -739,9 +689,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1059
-              ],
+              "CWE": [1059],
               "NIST": []
             },
             {
@@ -760,9 +708,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                362
-              ],
+              "CWE": [362],
               "NIST": []
             },
             {
@@ -781,9 +727,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                367
-              ],
+              "CWE": [367],
               "NIST": []
             }
           ]
@@ -828,9 +772,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                646
-              ],
+              "CWE": [646],
               "NIST": []
             }
           ]
@@ -862,9 +804,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                923
-              ],
+              "CWE": [923],
               "NIST": []
             },
             {
@@ -883,9 +823,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                494
-              ],
+              "CWE": [494],
               "NIST": []
             },
             {
@@ -904,9 +842,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1104
-              ],
+              "CWE": [1104],
               "NIST": []
             },
             {
@@ -944,9 +880,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                265
-              ],
+              "CWE": [265],
               "NIST": []
             },
             {
@@ -965,9 +899,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                477
-              ],
+              "CWE": [477],
               "NIST": []
             }
           ]
@@ -1001,12 +933,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                521
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [521],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.2",
@@ -1024,12 +952,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                521
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [521],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.3",
@@ -1047,12 +971,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                521
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [521],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.4",
@@ -1070,12 +990,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                521
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [521],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.5",
@@ -1093,12 +1009,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                620
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [620],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.6",
@@ -1116,12 +1028,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                620
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [620],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.7",
@@ -1139,12 +1047,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                521
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [521],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.8",
@@ -1162,12 +1066,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                521
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [521],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.9",
@@ -1185,12 +1085,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                521
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [521],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.10",
@@ -1208,12 +1104,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                263
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [263],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.11",
@@ -1231,12 +1123,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                521
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [521],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.1.12",
@@ -1254,12 +1142,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                521
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [521],
+              "NIST": ["5.1.1.2"]
             }
           ]
         },
@@ -1284,15 +1168,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                307
-              ],
-              "NIST": [
-                "5.2.2",
-                "5.1.1.2",
-                "5.1.4.2",
-                "5.1.5.2"
-              ]
+              "CWE": [307],
+              "NIST": ["5.2.2", "5.1.1.2", "5.1.4.2", "5.1.5.2"]
             },
             {
               "Shortcode": "V2.2.2",
@@ -1310,12 +1187,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                304
-              ],
-              "NIST": [
-                "5.2.10"
-              ]
+              "CWE": [304],
+              "NIST": ["5.2.10"]
             },
             {
               "Shortcode": "V2.2.3",
@@ -1333,9 +1206,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                620
-              ],
+              "CWE": [620],
               "NIST": []
             },
             {
@@ -1354,12 +1225,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                308
-              ],
-              "NIST": [
-                "5.2.5"
-              ]
+              "CWE": [308],
+              "NIST": ["5.2.5"]
             },
             {
               "Shortcode": "V2.2.5",
@@ -1377,12 +1244,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                319
-              ],
-              "NIST": [
-                "5.2.6"
-              ]
+              "CWE": [319],
+              "NIST": ["5.2.6"]
             },
             {
               "Shortcode": "V2.2.6",
@@ -1400,12 +1263,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                308
-              ],
-              "NIST": [
-                "5.2.8"
-              ]
+              "CWE": [308],
+              "NIST": ["5.2.8"]
             },
             {
               "Shortcode": "V2.2.7",
@@ -1423,12 +1282,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                308
-              ],
-              "NIST": [
-                "5.2.9"
-              ]
+              "CWE": [308],
+              "NIST": ["5.2.9"]
             }
           ]
         },
@@ -1453,13 +1308,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                330
-              ],
-              "NIST": [
-                "5.1.1.2",
-                "A.3"
-              ]
+              "CWE": [330],
+              "NIST": ["5.1.1.2", "A.3"]
             },
             {
               "Shortcode": "V2.3.2",
@@ -1477,12 +1327,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                308
-              ],
-              "NIST": [
-                "6.1.3"
-              ]
+              "CWE": [308],
+              "NIST": ["6.1.3"]
             },
             {
               "Shortcode": "V2.3.3",
@@ -1500,12 +1346,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                287
-              ],
-              "NIST": [
-                "6.1.4"
-              ]
+              "CWE": [287],
+              "NIST": ["6.1.4"]
             }
           ]
         },
@@ -1530,12 +1372,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                916
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [916],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.4.2",
@@ -1553,12 +1391,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                916
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [916],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.4.3",
@@ -1576,12 +1410,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                916
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [916],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.4.4",
@@ -1599,12 +1429,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                916
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [916],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.4.5",
@@ -1622,12 +1448,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                916
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [916],
+              "NIST": ["5.1.1.2"]
             }
           ]
         },
@@ -1652,12 +1474,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                640
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [640],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.5.2",
@@ -1675,12 +1493,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                640
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [640],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.5.3",
@@ -1698,12 +1512,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                640
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [640],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.5.4",
@@ -1721,13 +1531,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                16
-              ],
-              "NIST": [
-                "5.1.1.2",
-                "A.3"
-              ]
+              "CWE": [16],
+              "NIST": ["5.1.1.2", "A.3"]
             },
             {
               "Shortcode": "V2.5.5",
@@ -1745,12 +1550,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                304
-              ],
-              "NIST": [
-                "6.1.2.3"
-              ]
+              "CWE": [304],
+              "NIST": ["6.1.2.3"]
             },
             {
               "Shortcode": "V2.5.6",
@@ -1768,12 +1569,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                640
-              ],
-              "NIST": [
-                "5.1.1.2"
-              ]
+              "CWE": [640],
+              "NIST": ["5.1.1.2"]
             },
             {
               "Shortcode": "V2.5.7",
@@ -1791,12 +1588,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                308
-              ],
-              "NIST": [
-                "6.1.2.3"
-              ]
+              "CWE": [308],
+              "NIST": ["6.1.2.3"]
             }
           ]
         },
@@ -1821,12 +1614,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                308
-              ],
-              "NIST": [
-                "5.1.2.2"
-              ]
+              "CWE": [308],
+              "NIST": ["5.1.2.2"]
             },
             {
               "Shortcode": "V2.6.2",
@@ -1844,12 +1633,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                330
-              ],
-              "NIST": [
-                "5.1.2.2"
-              ]
+              "CWE": [330],
+              "NIST": ["5.1.2.2"]
             },
             {
               "Shortcode": "V2.6.3",
@@ -1867,12 +1652,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                310
-              ],
-              "NIST": [
-                "5.1.2.2"
-              ]
+              "CWE": [310],
+              "NIST": ["5.1.2.2"]
             }
           ]
         },
@@ -1897,12 +1678,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                287
-              ],
-              "NIST": [
-                "5.1.3.2"
-              ]
+              "CWE": [287],
+              "NIST": ["5.1.3.2"]
             },
             {
               "Shortcode": "V2.7.2",
@@ -1920,12 +1697,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                287
-              ],
-              "NIST": [
-                "5.1.3.2"
-              ]
+              "CWE": [287],
+              "NIST": ["5.1.3.2"]
             },
             {
               "Shortcode": "V2.7.3",
@@ -1943,12 +1716,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                287
-              ],
-              "NIST": [
-                "5.1.3.2"
-              ]
+              "CWE": [287],
+              "NIST": ["5.1.3.2"]
             },
             {
               "Shortcode": "V2.7.4",
@@ -1966,12 +1735,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                523
-              ],
-              "NIST": [
-                "5.1.3.2"
-              ]
+              "CWE": [523],
+              "NIST": ["5.1.3.2"]
             },
             {
               "Shortcode": "V2.7.5",
@@ -1989,12 +1754,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                256
-              ],
-              "NIST": [
-                "5.1.3.2"
-              ]
+              "CWE": [256],
+              "NIST": ["5.1.3.2"]
             },
             {
               "Shortcode": "V2.7.6",
@@ -2012,12 +1773,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                310
-              ],
-              "NIST": [
-                "5.1.3.2"
-              ]
+              "CWE": [310],
+              "NIST": ["5.1.3.2"]
             }
           ]
         },
@@ -2042,13 +1799,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                613
-              ],
-              "NIST": [
-                "5.1.4.2",
-                "5.1.5.2"
-              ]
+              "CWE": [613],
+              "NIST": ["5.1.4.2", "5.1.5.2"]
             },
             {
               "Shortcode": "V2.8.2",
@@ -2066,13 +1818,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                320
-              ],
-              "NIST": [
-                "5.1.4.2",
-                "5.1.5.2"
-              ]
+              "CWE": [320],
+              "NIST": ["5.1.4.2", "5.1.5.2"]
             },
             {
               "Shortcode": "V2.8.3",
@@ -2090,13 +1837,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                326
-              ],
-              "NIST": [
-                "5.1.4.2",
-                "5.1.5.2"
-              ]
+              "CWE": [326],
+              "NIST": ["5.1.4.2", "5.1.5.2"]
             },
             {
               "Shortcode": "V2.8.4",
@@ -2114,13 +1856,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                287
-              ],
-              "NIST": [
-                "5.1.4.2",
-                "5.1.5.2"
-              ]
+              "CWE": [287],
+              "NIST": ["5.1.4.2", "5.1.5.2"]
             },
             {
               "Shortcode": "V2.8.5",
@@ -2138,12 +1875,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                287
-              ],
-              "NIST": [
-                "5.1.5.2"
-              ]
+              "CWE": [287],
+              "NIST": ["5.1.5.2"]
             },
             {
               "Shortcode": "V2.8.6",
@@ -2161,12 +1894,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                613
-              ],
-              "NIST": [
-                "5.2.1"
-              ]
+              "CWE": [613],
+              "NIST": ["5.2.1"]
             },
             {
               "Shortcode": "V2.8.7",
@@ -2184,12 +1913,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                308
-              ],
-              "NIST": [
-                "5.2.3"
-              ]
+              "CWE": [308],
+              "NIST": ["5.2.3"]
             }
           ]
         },
@@ -2214,12 +1939,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                320
-              ],
-              "NIST": [
-                "5.1.7.2"
-              ]
+              "CWE": [320],
+              "NIST": ["5.1.7.2"]
             },
             {
               "Shortcode": "V2.9.2",
@@ -2237,12 +1958,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                330
-              ],
-              "NIST": [
-                "5.1.7.2"
-              ]
+              "CWE": [330],
+              "NIST": ["5.1.7.2"]
             },
             {
               "Shortcode": "V2.9.3",
@@ -2260,12 +1977,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                327
-              ],
-              "NIST": [
-                "5.1.7.2"
-              ]
+              "CWE": [327],
+              "NIST": ["5.1.7.2"]
             }
           ]
         },
@@ -2290,12 +2003,8 @@
                 "Required": true,
                 "Requirement": "HSM"
               },
-              "CWE": [
-                287
-              ],
-              "NIST": [
-                "5.1.1.1"
-              ]
+              "CWE": [287],
+              "NIST": ["5.1.1.1"]
             },
             {
               "Shortcode": "V2.10.2",
@@ -2313,12 +2022,8 @@
                 "Required": true,
                 "Requirement": "HSM"
               },
-              "CWE": [
-                255
-              ],
-              "NIST": [
-                "5.1.1.1"
-              ]
+              "CWE": [255],
+              "NIST": ["5.1.1.1"]
             },
             {
               "Shortcode": "V2.10.3",
@@ -2336,12 +2041,8 @@
                 "Required": true,
                 "Requirement": "HSM"
               },
-              "CWE": [
-                522
-              ],
-              "NIST": [
-                "5.1.1.1"
-              ]
+              "CWE": [522],
+              "NIST": ["5.1.1.1"]
             },
             {
               "Shortcode": "V2.10.4",
@@ -2359,9 +2060,7 @@
                 "Required": true,
                 "Requirement": "HSM"
               },
-              "CWE": [
-                798
-              ],
+              "CWE": [798],
               "NIST": []
             }
           ]
@@ -2395,9 +2094,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                598
-              ],
+              "CWE": [598],
               "NIST": []
             }
           ]
@@ -2423,12 +2120,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                384
-              ],
-              "NIST": [
-                "7.1"
-              ]
+              "CWE": [384],
+              "NIST": ["7.1"]
             },
             {
               "Shortcode": "V3.2.2",
@@ -2446,12 +2139,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                331
-              ],
-              "NIST": [
-                "7.1"
-              ]
+              "CWE": [331],
+              "NIST": ["7.1"]
             },
             {
               "Shortcode": "V3.2.3",
@@ -2469,12 +2158,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                539
-              ],
-              "NIST": [
-                "7.1"
-              ]
+              "CWE": [539],
+              "NIST": ["7.1"]
             },
             {
               "Shortcode": "V3.2.4",
@@ -2492,12 +2177,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                331
-              ],
-              "NIST": [
-                "7.1"
-              ]
+              "CWE": [331],
+              "NIST": ["7.1"]
             }
           ]
         },
@@ -2522,12 +2203,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                613
-              ],
-              "NIST": [
-                "7.1"
-              ]
+              "CWE": [613],
+              "NIST": ["7.1"]
             },
             {
               "Shortcode": "V3.3.2",
@@ -2545,12 +2222,8 @@
                 "Required": true,
                 "Requirement": "12 hours or 15 minutes of inactivity, with 2FA"
               },
-              "CWE": [
-                613
-              ],
-              "NIST": [
-                "7.2"
-              ]
+              "CWE": [613],
+              "NIST": ["7.2"]
             },
             {
               "Shortcode": "V3.3.3",
@@ -2568,9 +2241,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                613
-              ],
+              "CWE": [613],
               "NIST": []
             },
             {
@@ -2589,12 +2260,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                613
-              ],
-              "NIST": [
-                "7.1"
-              ]
+              "CWE": [613],
+              "NIST": ["7.1"]
             }
           ]
         },
@@ -2619,12 +2286,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                614
-              ],
-              "NIST": [
-                "7.1.1"
-              ]
+              "CWE": [614],
+              "NIST": ["7.1.1"]
             },
             {
               "Shortcode": "V3.4.2",
@@ -2642,12 +2305,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1004
-              ],
-              "NIST": [
-                "7.1.1"
-              ]
+              "CWE": [1004],
+              "NIST": ["7.1.1"]
             },
             {
               "Shortcode": "V3.4.3",
@@ -2665,12 +2324,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                16
-              ],
-              "NIST": [
-                "7.1.1"
-              ]
+              "CWE": [16],
+              "NIST": ["7.1.1"]
             },
             {
               "Shortcode": "V3.4.4",
@@ -2688,12 +2343,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                16
-              ],
-              "NIST": [
-                "7.1.1"
-              ]
+              "CWE": [16],
+              "NIST": ["7.1.1"]
             },
             {
               "Shortcode": "V3.4.5",
@@ -2711,12 +2362,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                16
-              ],
-              "NIST": [
-                "7.1.1"
-              ]
+              "CWE": [16],
+              "NIST": ["7.1.1"]
             }
           ]
         },
@@ -2741,12 +2388,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                290
-              ],
-              "NIST": [
-                "7.1.2"
-              ]
+              "CWE": [290],
+              "NIST": ["7.1.2"]
             },
             {
               "Shortcode": "V3.5.2",
@@ -2764,9 +2407,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                798
-              ],
+              "CWE": [798],
               "NIST": []
             },
             {
@@ -2785,9 +2426,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                345
-              ],
+              "CWE": [345],
               "NIST": []
             }
           ]
@@ -2813,12 +2452,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                613
-              ],
-              "NIST": [
-                "7.2.1"
-              ]
+              "CWE": [613],
+              "NIST": ["7.2.1"]
             },
             {
               "Shortcode": "V3.6.2",
@@ -2836,12 +2471,8 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                613
-              ],
-              "NIST": [
-                "7.2.1"
-              ]
+              "CWE": [613],
+              "NIST": ["7.2.1"]
             }
           ]
         },
@@ -2866,9 +2497,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                306
-              ],
+              "CWE": [306],
               "NIST": []
             }
           ]
@@ -2902,9 +2531,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                602
-              ],
+              "CWE": [602],
               "NIST": []
             },
             {
@@ -2923,9 +2550,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                639
-              ],
+              "CWE": [639],
               "NIST": []
             },
             {
@@ -2944,9 +2569,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                285
-              ],
+              "CWE": [285],
               "NIST": []
             },
             {
@@ -2984,9 +2607,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                285
-              ],
+              "CWE": [285],
               "NIST": []
             }
           ]
@@ -3012,9 +2633,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                639
-              ],
+              "CWE": [639],
               "NIST": []
             },
             {
@@ -3033,9 +2652,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                352
-              ],
+              "CWE": [352],
               "NIST": []
             }
           ]
@@ -3061,9 +2678,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                419
-              ],
+              "CWE": [419],
               "NIST": []
             },
             {
@@ -3082,9 +2697,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                548
-              ],
+              "CWE": [548],
               "NIST": []
             },
             {
@@ -3103,9 +2716,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                732
-              ],
+              "CWE": [732],
               "NIST": []
             }
           ]
@@ -3139,9 +2750,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                235
-              ],
+              "CWE": [235],
               "NIST": []
             },
             {
@@ -3160,9 +2769,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                915
-              ],
+              "CWE": [915],
               "NIST": []
             },
             {
@@ -3181,9 +2788,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                20
-              ],
+              "CWE": [20],
               "NIST": []
             },
             {
@@ -3202,9 +2807,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                20
-              ],
+              "CWE": [20],
               "NIST": []
             },
             {
@@ -3223,9 +2826,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                601
-              ],
+              "CWE": [601],
               "NIST": []
             }
           ]
@@ -3251,9 +2852,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                116
-              ],
+              "CWE": [116],
               "NIST": []
             },
             {
@@ -3272,9 +2871,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                138
-              ],
+              "CWE": [138],
               "NIST": []
             },
             {
@@ -3293,9 +2890,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                147
-              ],
+              "CWE": [147],
               "NIST": []
             },
             {
@@ -3314,9 +2909,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                95
-              ],
+              "CWE": [95],
               "NIST": []
             },
             {
@@ -3335,9 +2928,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                94
-              ],
+              "CWE": [94],
               "NIST": []
             },
             {
@@ -3356,9 +2947,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                918
-              ],
+              "CWE": [918],
               "NIST": []
             },
             {
@@ -3377,9 +2966,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                159
-              ],
+              "CWE": [159],
               "NIST": []
             },
             {
@@ -3398,9 +2985,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                94
-              ],
+              "CWE": [94],
               "NIST": []
             }
           ]
@@ -3426,9 +3011,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                116
-              ],
+              "CWE": [116],
               "NIST": []
             },
             {
@@ -3447,9 +3030,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                176
-              ],
+              "CWE": [176],
               "NIST": []
             },
             {
@@ -3468,9 +3049,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                79
-              ],
+              "CWE": [79],
               "NIST": []
             },
             {
@@ -3489,9 +3068,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                89
-              ],
+              "CWE": [89],
               "NIST": []
             },
             {
@@ -3510,9 +3087,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                89
-              ],
+              "CWE": [89],
               "NIST": []
             },
             {
@@ -3531,9 +3106,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                830
-              ],
+              "CWE": [830],
               "NIST": []
             },
             {
@@ -3552,9 +3125,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                90
-              ],
+              "CWE": [90],
               "NIST": []
             },
             {
@@ -3573,9 +3144,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                78
-              ],
+              "CWE": [78],
               "NIST": []
             },
             {
@@ -3594,9 +3163,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                829
-              ],
+              "CWE": [829],
               "NIST": []
             },
             {
@@ -3615,9 +3182,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                643
-              ],
+              "CWE": [643],
               "NIST": []
             }
           ]
@@ -3643,9 +3208,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                120
-              ],
+              "CWE": [120],
               "NIST": []
             },
             {
@@ -3664,9 +3227,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                134
-              ],
+              "CWE": [134],
               "NIST": []
             },
             {
@@ -3685,9 +3246,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                190
-              ],
+              "CWE": [190],
               "NIST": []
             }
           ]
@@ -3713,9 +3272,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                502
-              ],
+              "CWE": [502],
               "NIST": []
             },
             {
@@ -3734,9 +3291,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                611
-              ],
+              "CWE": [611],
               "NIST": []
             },
             {
@@ -3755,9 +3310,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                502
-              ],
+              "CWE": [502],
               "NIST": []
             },
             {
@@ -3776,9 +3329,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                95
-              ],
+              "CWE": [95],
               "NIST": []
             }
           ]
@@ -3812,9 +3363,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                311
-              ],
+              "CWE": [311],
               "NIST": []
             },
             {
@@ -3833,9 +3382,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                311
-              ],
+              "CWE": [311],
               "NIST": []
             },
             {
@@ -3854,9 +3401,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                311
-              ],
+              "CWE": [311],
               "NIST": []
             }
           ]
@@ -3882,9 +3427,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                310
-              ],
+              "CWE": [310],
               "NIST": []
             },
             {
@@ -3903,9 +3446,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                327
-              ],
+              "CWE": [327],
               "NIST": []
             },
             {
@@ -3924,9 +3465,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                326
-              ],
+              "CWE": [326],
               "NIST": []
             },
             {
@@ -3945,9 +3484,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                326
-              ],
+              "CWE": [326],
               "NIST": []
             },
             {
@@ -3966,9 +3503,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                326
-              ],
+              "CWE": [326],
               "NIST": []
             },
             {
@@ -3987,9 +3522,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                326
-              ],
+              "CWE": [326],
               "NIST": []
             },
             {
@@ -4008,9 +3541,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                326
-              ],
+              "CWE": [326],
               "NIST": []
             },
             {
@@ -4029,9 +3560,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                385
-              ],
+              "CWE": [385],
               "NIST": []
             }
           ]
@@ -4057,9 +3586,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                338
-              ],
+              "CWE": [338],
               "NIST": []
             },
             {
@@ -4078,9 +3605,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                338
-              ],
+              "CWE": [338],
               "NIST": []
             },
             {
@@ -4099,9 +3624,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                338
-              ],
+              "CWE": [338],
               "NIST": []
             }
           ]
@@ -4127,9 +3650,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                798
-              ],
+              "CWE": [798],
               "NIST": []
             },
             {
@@ -4148,9 +3669,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                320
-              ],
+              "CWE": [320],
               "NIST": []
             }
           ]
@@ -4184,9 +3703,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                532
-              ],
+              "CWE": [532],
               "NIST": []
             },
             {
@@ -4205,9 +3722,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                532
-              ],
+              "CWE": [532],
               "NIST": []
             },
             {
@@ -4226,9 +3741,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                778
-              ],
+              "CWE": [778],
               "NIST": []
             },
             {
@@ -4247,9 +3760,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                778
-              ],
+              "CWE": [778],
               "NIST": []
             }
           ]
@@ -4275,9 +3786,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                778
-              ],
+              "CWE": [778],
               "NIST": []
             },
             {
@@ -4296,9 +3805,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                285
-              ],
+              "CWE": [285],
               "NIST": []
             }
           ]
@@ -4324,9 +3831,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                117
-              ],
+              "CWE": [117],
               "NIST": []
             },
             {
@@ -4364,9 +3869,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                200
-              ],
+              "CWE": [200],
               "NIST": []
             },
             {
@@ -4411,9 +3914,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                210
-              ],
+              "CWE": [210],
               "NIST": []
             },
             {
@@ -4432,9 +3933,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                544
-              ],
+              "CWE": [544],
               "NIST": []
             },
             {
@@ -4453,9 +3952,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                431
-              ],
+              "CWE": [431],
               "NIST": []
             }
           ]
@@ -4489,9 +3986,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                524
-              ],
+              "CWE": [524],
               "NIST": []
             },
             {
@@ -4510,9 +4005,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                524
-              ],
+              "CWE": [524],
               "NIST": []
             },
             {
@@ -4531,9 +4024,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                233
-              ],
+              "CWE": [233],
               "NIST": []
             },
             {
@@ -4552,9 +4043,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                770
-              ],
+              "CWE": [770],
               "NIST": []
             },
             {
@@ -4573,9 +4062,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                19
-              ],
+              "CWE": [19],
               "NIST": []
             },
             {
@@ -4594,9 +4081,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                19
-              ],
+              "CWE": [19],
               "NIST": []
             }
           ]
@@ -4622,9 +4107,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                525
-              ],
+              "CWE": [525],
               "NIST": []
             },
             {
@@ -4643,9 +4126,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                922
-              ],
+              "CWE": [922],
               "NIST": []
             },
             {
@@ -4664,9 +4145,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                922
-              ],
+              "CWE": [922],
               "NIST": []
             }
           ]
@@ -4692,9 +4171,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                319
-              ],
+              "CWE": [319],
               "NIST": []
             },
             {
@@ -4713,9 +4190,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                212
-              ],
+              "CWE": [212],
               "NIST": []
             },
             {
@@ -4734,9 +4209,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                285
-              ],
+              "CWE": [285],
               "NIST": []
             },
             {
@@ -4755,9 +4228,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                200
-              ],
+              "CWE": [200],
               "NIST": []
             },
             {
@@ -4776,9 +4247,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                532
-              ],
+              "CWE": [532],
               "NIST": []
             },
             {
@@ -4797,9 +4266,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                226
-              ],
+              "CWE": [226],
               "NIST": []
             },
             {
@@ -4818,9 +4285,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                327
-              ],
+              "CWE": [327],
               "NIST": []
             },
             {
@@ -4839,9 +4304,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                285
-              ],
+              "CWE": [285],
               "NIST": []
             }
           ]
@@ -4875,9 +4338,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                319
-              ],
+              "CWE": [319],
               "NIST": []
             },
             {
@@ -4896,9 +4357,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                326
-              ],
+              "CWE": [326],
               "NIST": []
             },
             {
@@ -4917,9 +4376,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                326
-              ],
+              "CWE": [326],
               "NIST": []
             }
           ]
@@ -4945,9 +4402,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                295
-              ],
+              "CWE": [295],
               "NIST": []
             },
             {
@@ -4966,9 +4421,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                319
-              ],
+              "CWE": [319],
               "NIST": []
             },
             {
@@ -4987,9 +4440,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                287
-              ],
+              "CWE": [287],
               "NIST": []
             },
             {
@@ -5008,9 +4459,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                299
-              ],
+              "CWE": [299],
               "NIST": []
             },
             {
@@ -5029,9 +4478,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                544
-              ],
+              "CWE": [544],
               "NIST": []
             }
           ]
@@ -5065,9 +4512,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                749
-              ],
+              "CWE": [749],
               "NIST": []
             }
           ]
@@ -5093,9 +4538,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                359
-              ],
+              "CWE": [359],
               "NIST": []
             },
             {
@@ -5114,9 +4557,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                272
-              ],
+              "CWE": [272],
               "NIST": []
             },
             {
@@ -5135,9 +4576,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                507
-              ],
+              "CWE": [507],
               "NIST": []
             },
             {
@@ -5156,9 +4595,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                511
-              ],
+              "CWE": [511],
               "NIST": []
             },
             {
@@ -5177,9 +4614,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                511
-              ],
+              "CWE": [511],
               "NIST": []
             },
             {
@@ -5198,9 +4633,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                507
-              ],
+              "CWE": [507],
               "NIST": []
             }
           ]
@@ -5226,9 +4659,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                16
-              ],
+              "CWE": [16],
               "NIST": []
             },
             {
@@ -5247,9 +4678,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                353
-              ],
+              "CWE": [353],
               "NIST": []
             },
             {
@@ -5268,9 +4697,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                350
-              ],
+              "CWE": [350],
               "NIST": []
             }
           ]
@@ -5304,9 +4731,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                841
-              ],
+              "CWE": [841],
               "NIST": []
             },
             {
@@ -5325,9 +4750,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                799
-              ],
+              "CWE": [799],
               "NIST": []
             },
             {
@@ -5346,9 +4769,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                770
-              ],
+              "CWE": [770],
               "NIST": []
             },
             {
@@ -5367,9 +4788,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                770
-              ],
+              "CWE": [770],
               "NIST": []
             },
             {
@@ -5388,9 +4807,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                841
-              ],
+              "CWE": [841],
               "NIST": []
             },
             {
@@ -5409,9 +4826,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                367
-              ],
+              "CWE": [367],
               "NIST": []
             },
             {
@@ -5430,9 +4845,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                754
-              ],
+              "CWE": [754],
               "NIST": []
             },
             {
@@ -5451,9 +4864,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                390
-              ],
+              "CWE": [390],
               "NIST": []
             }
           ]
@@ -5487,9 +4898,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                400
-              ],
+              "CWE": [400],
               "NIST": []
             },
             {
@@ -5508,9 +4917,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                409
-              ],
+              "CWE": [409],
               "NIST": []
             },
             {
@@ -5529,9 +4936,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                770
-              ],
+              "CWE": [770],
               "NIST": []
             }
           ]
@@ -5557,9 +4962,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                434
-              ],
+              "CWE": [434],
               "NIST": []
             }
           ]
@@ -5585,9 +4988,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                22
-              ],
+              "CWE": [22],
               "NIST": []
             },
             {
@@ -5606,9 +5007,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                73
-              ],
+              "CWE": [73],
               "NIST": []
             },
             {
@@ -5627,9 +5026,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                98
-              ],
+              "CWE": [98],
               "NIST": []
             },
             {
@@ -5648,9 +5045,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                641
-              ],
+              "CWE": [641],
               "NIST": []
             },
             {
@@ -5669,9 +5064,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                78
-              ],
+              "CWE": [78],
               "NIST": []
             },
             {
@@ -5690,9 +5083,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                829
-              ],
+              "CWE": [829],
               "NIST": []
             }
           ]
@@ -5718,9 +5109,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                552
-              ],
+              "CWE": [552],
               "NIST": []
             },
             {
@@ -5739,9 +5128,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                509
-              ],
+              "CWE": [509],
               "NIST": []
             }
           ]
@@ -5767,9 +5154,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                552
-              ],
+              "CWE": [552],
               "NIST": []
             },
             {
@@ -5788,9 +5173,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                434
-              ],
+              "CWE": [434],
               "NIST": []
             }
           ]
@@ -5816,9 +5199,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                918
-              ],
+              "CWE": [918],
               "NIST": []
             }
           ]
@@ -5852,9 +5233,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                116
-              ],
+              "CWE": [116],
               "NIST": []
             },
             {
@@ -5892,9 +5271,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                598
-              ],
+              "CWE": [598],
               "NIST": []
             },
             {
@@ -5913,9 +5290,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                285
-              ],
+              "CWE": [285],
               "NIST": []
             },
             {
@@ -5934,9 +5309,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                434
-              ],
+              "CWE": [434],
               "NIST": []
             }
           ]
@@ -5962,9 +5335,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                650
-              ],
+              "CWE": [650],
               "NIST": []
             },
             {
@@ -5983,9 +5354,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                20
-              ],
+              "CWE": [20],
               "NIST": []
             },
             {
@@ -6004,9 +5373,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                352
-              ],
+              "CWE": [352],
               "NIST": []
             },
             {
@@ -6044,9 +5411,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                436
-              ],
+              "CWE": [436],
               "NIST": []
             },
             {
@@ -6065,9 +5430,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                345
-              ],
+              "CWE": [345],
               "NIST": []
             }
           ]
@@ -6093,9 +5456,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                20
-              ],
+              "CWE": [20],
               "NIST": []
             },
             {
@@ -6114,9 +5475,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                345
-              ],
+              "CWE": [345],
               "NIST": []
             }
           ]
@@ -6142,9 +5501,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                770
-              ],
+              "CWE": [770],
               "NIST": []
             },
             {
@@ -6163,9 +5520,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                285
-              ],
+              "CWE": [285],
               "NIST": []
             }
           ]
@@ -6218,9 +5573,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                120
-              ],
+              "CWE": [120],
               "NIST": []
             },
             {
@@ -6239,9 +5592,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                16
-              ],
+              "CWE": [16],
               "NIST": []
             },
             {
@@ -6305,9 +5656,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1026
-              ],
+              "CWE": [1026],
               "NIST": []
             },
             {
@@ -6326,9 +5675,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1002
-              ],
+              "CWE": [1002],
               "NIST": []
             },
             {
@@ -6347,9 +5694,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                829
-              ],
+              "CWE": [829],
               "NIST": []
             },
             {
@@ -6368,9 +5713,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                829
-              ],
+              "CWE": [829],
               "NIST": []
             },
             {
@@ -6408,9 +5751,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                265
-              ],
+              "CWE": [265],
               "NIST": []
             }
           ]
@@ -6455,9 +5796,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                497
-              ],
+              "CWE": [497],
               "NIST": []
             },
             {
@@ -6476,9 +5815,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                200
-              ],
+              "CWE": [200],
               "NIST": []
             }
           ]
@@ -6504,9 +5841,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                173
-              ],
+              "CWE": [173],
               "NIST": []
             },
             {
@@ -6525,9 +5860,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                116
-              ],
+              "CWE": [116],
               "NIST": []
             },
             {
@@ -6546,9 +5879,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1021
-              ],
+              "CWE": [1021],
               "NIST": []
             },
             {
@@ -6567,9 +5898,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                116
-              ],
+              "CWE": [116],
               "NIST": []
             },
             {
@@ -6588,9 +5917,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                523
-              ],
+              "CWE": [523],
               "NIST": []
             },
             {
@@ -6609,9 +5936,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                116
-              ],
+              "CWE": [116],
               "NIST": []
             },
             {
@@ -6630,9 +5955,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                1021
-              ],
+              "CWE": [1021],
               "NIST": []
             }
           ]
@@ -6658,9 +5981,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                749
-              ],
+              "CWE": [749],
               "NIST": []
             },
             {
@@ -6679,9 +6000,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                346
-              ],
+              "CWE": [346],
               "NIST": []
             },
             {
@@ -6700,9 +6019,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                346
-              ],
+              "CWE": [346],
               "NIST": []
             },
             {
@@ -6721,9 +6038,7 @@
                 "Required": true,
                 "Requirement": ""
               },
-              "CWE": [
-                306
-              ],
+              "CWE": [306],
               "NIST": []
             }
           ]
