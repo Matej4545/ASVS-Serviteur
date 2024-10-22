@@ -1,11 +1,11 @@
 import {
-    Chart as ChartJS,
-    Filler,
-    Legend,
-    LineElement,
-    PointElement,
-    RadialLinearScale,
-    Tooltip
+  Chart as ChartJS,
+  Filler,
+  Legend,
+  LineElement,
+  PointElement,
+  RadialLinearScale,
+  Tooltip,
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
 
@@ -15,7 +15,7 @@ ChartJS.register(
   LineElement,
   Filler,
   Tooltip,
-  Legend
+  Legend,
 );
 
 interface IRadarChartProps {
@@ -23,9 +23,9 @@ interface IRadarChartProps {
 }
 
 function RadarChart(props: IRadarChartProps) {
-  const {data} = props;
+  const { data } = props;
 
-  return <Radar data={data} className="w-full"/>;
+  return <Radar data={data} className="w-full" />;
 }
 
 export default RadarChart;

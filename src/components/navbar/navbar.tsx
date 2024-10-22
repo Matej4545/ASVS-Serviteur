@@ -30,9 +30,13 @@ function Navbar() {
               text="This will remove all current progress and you will need to start new project from scratch. Make sure you did download the progress before proceeding!"
               onSubmit={() => clearData()}
             />
-            <Tooltip text="Audit report"><a href="?report=true"><Scroll /></a></Tooltip>
+            <Tooltip text="Audit report">
+              <a href="?report=true">
+                <Scroll />
+              </a>
+            </Tooltip>
             <div>
-              <FileExport data={data}/>
+              <FileExport data={data} />
             </div>
           </>
         )}

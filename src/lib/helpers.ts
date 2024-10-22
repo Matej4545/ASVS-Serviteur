@@ -5,17 +5,16 @@ import { ASVSAuditResult } from "../types/types";
 
 //Global
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
 
 //ASVS related
 
 export function getLevelLabel(item: any) {
-  return item.L1.Required ? "L1" : item.L2.Required ? "L2" : "L3"
+  return item.L1.Required ? "L1" : item.L2.Required ? "L2" : "L3";
 }
 
-export function isRequiredForLevel(item: any, level: number)
-{
+export function isRequiredForLevel(item: any, level: number) {
   switch (level) {
     case 1:
       return item.L1.Required;
@@ -31,13 +30,12 @@ export function isRequiredForLevel(item: any, level: number)
 // Function used to replace md link into HTML link
 const regex = /\(\[([\w|,|\ ]+)\]\((\S+)\)\)/gm;
 export function replaceLink(description: string) {
-  const textWithoutLink = description.replace(regex, "")
-  const matchGroup = regex.exec(description)
-  const linkText = matchGroup ? matchGroup[1] : null
-  const link = matchGroup ? matchGroup[2] : null
-  return { textWithoutLink, linkText, link}
+  const textWithoutLink = description.replace(regex, "");
+  const matchGroup = regex.exec(description);
+  const linkText = matchGroup ? matchGroup[1] : null;
+  const link = matchGroup ? matchGroup[2] : null;
+  return { textWithoutLink, linkText, link };
 }
-
 
 export function filterAsvsByLevel(level: number) {
   return asvs.Requirements.map((req) => ({
@@ -52,11 +50,18 @@ export function filterAsvsByLevel(level: number) {
 export function getInitialResults() {
   return asvs.Requirements.flatMap((item) =>
     item.Items.flatMap((i) =>
-      i.Items.map((i) => ({ shortcode: i.Shortcode, checked: false, note: "" } as ASVSAuditResult))
-    )
+      i.Items.map(
+        (i) =>
+          ({
+            shortcode: i.Shortcode,
+            checked: false,
+            note: "",
+          }) as ASVSAuditResult,
+      ),
+    ),
   );
 }
 
 export function findAuditRes(progress: ASVSAuditResult[], shortcode: string) {
-  return progress.find((p) => p.shortcode === shortcode)
+  return progress.find((p) => p.shortcode === shortcode);
 }
