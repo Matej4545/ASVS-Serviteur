@@ -1,6 +1,6 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
-import asvs from "../asvs_v4.0.3.json";
+import asvs from "../data/OWASP_Application_Security_Verification_Standard_5.0.0_en.json";
 import { ASVSAuditResult } from "../types/types";
 
 //Global
@@ -11,20 +11,12 @@ export function cn(...inputs: ClassValue[]) {
 //ASVS related
 
 export function getLevelLabel(item: any) {
-  return item.L1.Required ? "L1" : item.L2.Required ? "L2" : "L3";
+  return `L${item.L}`;
 }
 
 export function isRequiredForLevel(item: any, level: number) {
-  switch (level) {
-    case 1:
-      return item.L1.Required;
-    case 2:
-      return item.L2.Required;
-    case 3:
-      return item.L3.Required;
-    default:
-      return false;
-  }
+  const itemLevel = parseInt(item.L);
+  return itemLevel <= level;
 }
 
 // Function used to replace md link into HTML link
@@ -55,6 +47,7 @@ export function getInitialResults() {
           ({
             shortcode: i.Shortcode,
             checked: false,
+            NA: false,
             note: "",
           }) as ASVSAuditResult,
       ),

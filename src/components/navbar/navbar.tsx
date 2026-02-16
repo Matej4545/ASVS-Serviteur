@@ -19,6 +19,12 @@ function Navbar() {
             style={{ color: "red" }}
           />
           <h1>OWASP ASVS Serviteur</h1>
+          <a href="https://github.com/OWASP/ASVS/tree/master/5.0">
+            {" "}
+            <span className=" ml-4 text-xs text-slate-500">
+              Using ASVS v5.0.0
+            </span>
+          </a>
         </a>
         {data && (
           <>
