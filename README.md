@@ -5,7 +5,7 @@ Simple UI for using OWASP ASVS framework to evaluate project or application secu
 
 ## Usage
 
-Whole code is frontend only which means _no data are send outside your local browser_. However it also means that progress is not stored remotely, only in local storage. Currently it support only 1 project at a time, but can be easily extended for multiple project support using different `localStorage` keys or storage format. 
+Whole code is frontend only which means _no data are send outside your local browser_. However it also means that progress is not stored remotely, only in local storage. Currently it support only 1 project at a time, but can be easily extended for multiple project support using different `localStorage` keys or storage format.
 
 Start by creating new project and setting target ASVS level. Then you can start filling the audit for your project. When you are finished, generate report using "scroll" icon in top navbar.
 
