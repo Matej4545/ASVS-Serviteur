@@ -23,7 +23,8 @@ export function getResultForCategories(data: ASVSAudit) {
   const controlsForLevel = filterAsvsByLevel(data.targetLevel);
   const enriched = controlsForLevel.map((i1) => ({
     shortcode: i1.Shortcode,
-    name: i1.ShortName,
+    name: i1.Name,
+    shortName: i1.ShortName,
     items: i1.Items.map((i2) => ({
       shortcode: i2.Shortcode,
       checked: i2.Items.filter(
@@ -63,7 +64,7 @@ export function getFlatResultPerCategory(result: ASVSAudit) {
  */
 export function generateRadarChartData(result: ASVSAudit) {
   const filteredASVS = filterAsvsByLevel(result.targetLevel);
-  const labels = filteredASVS.flatMap((c) => c.ShortName);
+  const labels = filteredASVS.flatMap((c) => `${c.Shortcode}: ${c.ShortName}`);
   const chartData = getFlatResultPerCategory(result).map((r) =>
     r.total ? getPercent(r.checked, r.total) : 100,
   );

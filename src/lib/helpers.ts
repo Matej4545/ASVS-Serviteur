@@ -47,6 +47,7 @@ export function getInitialResults() {
           ({
             shortcode: i.Shortcode,
             checked: false,
+            partial: false,
             NA: false,
             note: "",
           }) as ASVSAuditResult,

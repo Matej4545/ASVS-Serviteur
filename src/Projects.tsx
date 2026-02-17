@@ -30,7 +30,7 @@ function Projects() {
     <div className="">
       <form
         action=""
-        className="border rounded-lg flex flex-col p-6 max-w-lg mx-auto gap-1"
+        className="border bg-white rounded-lg flex flex-col p-6 max-w-lg mx-auto gap-1"
       >
         <h1 className="pb-8">Create new project</h1>
         <label htmlFor="name">What is the project called?</label>
@@ -73,7 +73,7 @@ function Projects() {
       <div className="text-center font-bold py-5 text-xl">OR</div>
       <form
         action=""
-        className="border rounded-lg flex flex-col p-6 max-w-lg mx-auto gap-1"
+        className="border bg-white rounded-lg flex flex-col p-6 max-w-lg mx-auto gap-1"
       >
         <h1 className="pb-8">Load data from existing project</h1>
         <label htmlFor="content">Copy and paste progress down below</label>

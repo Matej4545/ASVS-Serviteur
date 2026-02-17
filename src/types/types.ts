@@ -8,6 +8,7 @@ export type ASVSAudit = {
 export type ASVSAuditResult = {
   shortcode: string;
   checked: boolean;
+  partial: boolean;
   NA: boolean;
   note: string | undefined;
 };

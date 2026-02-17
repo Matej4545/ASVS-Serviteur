@@ -9,8 +9,9 @@ export default {
       },
     },
     fontFamily: {
-      sans: ["Roboto", "sans-serif"],
+      sans: ["Space Grotesk", "sans-serif"],
       serif: ["Merriweather", "serif"],
+      mono: ["JetBrains Mono", "monospace"],
     },
   },
   plugins: [],

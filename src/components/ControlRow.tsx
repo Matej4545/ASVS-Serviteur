@@ -1,8 +1,7 @@
-import { EyeOff, Link, NotebookPen } from "lucide-react";
+import { NotebookPen } from "lucide-react";
 import { useState } from "react";
 import { cn, replaceLink } from "../lib/helpers";
 import { ASVSAuditResult } from "../types/types";
-import Tooltip from "./tooltip/tooltip";
 
 interface IControlRowProps {
   shortCode: string;
@@ -11,9 +10,11 @@ interface IControlRowProps {
   initialState: ASVSAuditResult;
   cwe?: string;
   nist?: string;
-  handleChecked: (shortcode: string) => void;
+  handleStatusChange: (
+    shortcode: string,
+    status: "compliant" | "noncompliant" | "partial" | "na",
+  ) => void;
   handleNote: (note: string) => void;
-  handleNA: (shortcode: string) => void;
 }
 
 function ControlRow(props: IControlRowProps) {
@@ -21,105 +22,185 @@ function ControlRow(props: IControlRowProps) {
     shortCode,
     description,
     requiredFrom,
-    handleChecked,
+    handleStatusChange,
     initialState,
     cwe,
     nist,
     handleNote,
-    handleNA,
   } = props;
-  const [checked, setChecked] = useState(initialState.checked);
-  const [NA, setNA] = useState(initialState.NA);
-  const [note, setNote] = useState(initialState.note);
-  const [showNotes, setShowNotes] = useState(note && true);
-  const { textWithoutLink, linkText, link } = replaceLink(description);
-  return (
-    <div
-      className={cn(
-        "my-1 grid grid-cols-12 items-center rounded-lg px-2 bg-slate-200 py-2 ",
-        NA && "line-through bg-slate-100 text-slate-300",
-      )}
-    >
-      <p className="break-all">{shortCode}</p>
-      <div className="col-span-9 text-left text-pretty break-words	">
-        <p>
-          {textWithoutLink}{" "}
-          {link && (
-            <a href={link} target="_blank">
-              {linkText}
-            </a>
-          )}
-        </p>
-      </div>
 
-      <div className="flex flex-col  gap-2 justify-center items-center">
-        <Tooltip text="Required from level">
-          <span>{requiredFrom}</span>
-        </Tooltip>
-        {cwe?.length != 0 && (
-          <Tooltip text="CWE number">
-            <a
-              href={`https://cwe.mitre.org/data/definitions/` + cwe}
-              target="_blank"
+  // Determine current status from initialState
+  const getStatus = (
+    state: ASVSAuditResult,
+  ): "compliant" | "noncompliant" | "partial" | "na" => {
+    if (state.NA) return "na";
+    if (state.partial) return "partial";
+    if (state.checked) return "compliant";
+    return "noncompliant";
+  };
+
+  const [status, setStatus] = useState<
+    "compliant" | "noncompliant" | "partial" | "na"
+  >(getStatus(initialState));
+  const [note, setNote] = useState(initialState.note || "");
+  const [isNoteEditorOpen, setIsNoteEditorOpen] = useState(!!initialState.note);
+  const [editingNote, setEditingNote] = useState(initialState.note || "");
+
+  const { textWithoutLink, linkText, link } = replaceLink(description);
+
+  const statusStyles: Record<string, string> = {
+    compliant: "bg-emerald-500 text-white",
+    noncompliant: "bg-rose-500 text-white",
+    partial: "bg-amber-400 text-slate-900",
+    na: "bg-slate-200 text-slate-700",
+  };
+
+  const statusLabels: Record<string, string> = {
+    compliant: "Compliant",
+    noncompliant: "Non-compliant",
+    partial: "Partial",
+    na: "N/A",
+  };
+
+  const handleStatusClick = (
+    newStatus: "compliant" | "noncompliant" | "partial" | "na",
+  ) => {
+    setStatus(newStatus);
+    handleStatusChange(shortCode, newStatus);
+  };
+
+  const handleSaveNote = () => {
+    setNote(editingNote);
+    handleNote(editingNote);
+    setIsNoteEditorOpen(false);
+  };
+
+  const handleCancelNote = () => {
+    setEditingNote(note);
+    if (!note) {
+      setIsNoteEditorOpen(false);
+    }
+  };
+
+  const handleNoteIconClick = () => {
+    setIsNoteEditorOpen(!isNoteEditorOpen);
+  };
+
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-3">
+      <div className="grid gap-3 md:grid-cols-[70px_1fr_240px]">
+        <div className="font-mono text-xs font-semibold text-slate-700">
+          {shortCode}
+        </div>
+        <div className="space-y-1">
+          <p className="text-sm leading-snug text-slate-800">
+            {textWithoutLink}{" "}
+            {link && (
+              <a
+                href={link}
+                target="_blank"
+                className="text-blue-500 underline"
+              >
+                {linkText}
+              </a>
+            )}
+          </p>
+          <div className="flex flex-wrap gap-2 text-[10px] text-slate-500">
+            <span className="rounded-full border border-slate-200 bg-white px-2 py-0.5">
+              {requiredFrom}
+            </span>
+            {cwe && cwe.length > 0 && (
+              <a
+                href={`https://cwe.mitre.org/data/definitions/${cwe}`}
+                target="_blank"
+                className="rounded-full border border-slate-200 bg-white px-2 py-0.5 hover:border-orange-300"
+              >
+                {cwe}
+              </a>
+            )}
+            {nist && nist.length > 0 && (
+              <a
+                href="https://pages.nist.gov/800-63-3/sp800-63-3.html"
+                target="_blank"
+                className="rounded-full border border-slate-200 bg-white px-2 py-0.5 hover:border-orange-300"
+              >
+                {nist}
+              </a>
+            )}
+          </div>
+        </div>
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-[10px] uppercase tracking-[0.2em] text-slate-400">
+              Status
+            </span>
+            <span
+              className={cn(
+                "w-fit rounded-full px-2.5 py-0.5 text-[10px] font-semibold",
+                statusStyles[status],
+              )}
             >
-              {cwe}
-            </a>
-          </Tooltip>
-        )}
-        {nist?.length != 0 && (
-          <Tooltip text="NIST reference">
-            <span>{nist}</span>
-            <a href="https://pages.nist.gov/800-63-3/sp800-63-3.html">
-              <Link size={18} className="mx-2" />
-            </a>
-          </Tooltip>
-        )}
-      </div>
-      <div className="flex gap-1 flex-col justify-center">
-        <div className="flex gap-1 items-center flex-wrap">
-          <input
-            type="checkbox"
-            name="checked"
-            className="w-5 h-5"
-            onClick={() => {
-              handleChecked(shortCode), setChecked(!checked);
-            }}
-            checked={checked}
-          />{" "}
-          <label htmlFor="checked">Compliant</label>
-        </div>
-        <div className="flex gap-1 items-center flex-wrap">
-          <input
-            name="NA"
-            type="checkbox"
-            className="w-5 h-5"
-            onClick={() => {
-              handleNA(shortCode), setNA(!NA);
-            }}
-            checked={NA}
-          />{" "}
-          <label htmlFor="NA">N/A</label>
-        </div>
-        <div className="pt-2" onClick={() => setShowNotes(!showNotes)}>
-          {showNotes ? (
-            <EyeOff size={20} className="text-slate-700" />
-          ) : (
-            <NotebookPen className="text-slate-700" size={20} />
-          )}
+              {statusLabels[status]}
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="grid flex-1 grid-cols-4 overflow-hidden rounded-xl border border-slate-200 bg-white text-[10px] font-semibold text-slate-600">
+              {[
+                { label: "Compliant", value: "compliant" as const },
+                { label: "Non", value: "noncompliant" as const },
+                { label: "Partial", value: "partial" as const },
+                { label: "N/A", value: "na" as const },
+              ].map(({ label, value }) => (
+                <button
+                  key={value}
+                  onClick={() => handleStatusClick(value)}
+                  className={cn(
+                    "px-1 py-1 leading-tight text-center whitespace-normal hover:bg-slate-100",
+                    status === value && "bg-slate-100 font-bold",
+                  )}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={handleNoteIconClick}
+              aria-label={note ? "Edit note" : "Add note"}
+              className={cn(
+                "rounded-lg border border-slate-200 bg-white p-2 text-slate-600 hover:border-orange-300",
+                note && "border-orange-300 bg-orange-50",
+              )}
+            >
+              <NotebookPen size={14} />
+            </button>
+          </div>
         </div>
       </div>
-      {showNotes && (
-        <div className="row-start-2 col-span-12">
+      {isNoteEditorOpen && (
+        <div className="mt-3 rounded-xl border border-slate-200 bg-white p-3">
+          <div className="text-[10px] uppercase tracking-[0.2em] text-slate-400">
+            Notes
+          </div>
           <textarea
-            className="w-full h-18 rounded-md p-2"
-            name="notes"
-            value={note}
-            onChange={(e) => {
-              handleNote && handleNote(e.target.value);
-              setNote(e.target.value);
-            }}
-            placeholder="Notes..."
-          ></textarea>
+            className="mt-2 h-24 w-full resize-none rounded-lg border border-slate-200 p-2 text-xs text-slate-700 focus:border-orange-400 focus:outline-none"
+            value={editingNote}
+            onChange={(e) => setEditingNote(e.target.value)}
+            placeholder="Add notes about this control..."
+          />
+          <div className="mt-2 flex items-center justify-end gap-2">
+            <button
+              onClick={handleCancelNote}
+              className="rounded-md border border-slate-200 px-2 py-1 text-xs text-slate-500 hover:bg-slate-50"
+            >
+              Cancel
+            </button>
+            <button
+              onClick={handleSaveNote}
+              className="rounded-md bg-slate-900 px-2 py-1 text-xs font-semibold text-white hover:bg-slate-800"
+            >
+              Save
+            </button>
+          </div>
         </div>
       )}
     </div>

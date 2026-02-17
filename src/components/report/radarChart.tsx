@@ -24,7 +24,7 @@ interface IRadarChartProps {
 
 function RadarChart(props: IRadarChartProps) {
   const { data } = props;
-
+  console.log(data);
   return <Radar data={data} className="w-full" />;
 }
 

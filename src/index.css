@@ -10,25 +10,25 @@
     @apply text-xl;
   }
   main {
-    @apply p-5 lg:max-w-screen-xl	lg:mx-auto lg:p-8;
+    @apply w-full;
   }
   a {
     @apply text-blue-500 underline;
   }
   table {
-    @apply min-w-full divide-y divide-gray-400 border border-gray-400;
+    @apply min-w-full divide-y divide-gray-200 border border-gray-200;
   }
 
   .table {
-    @apply border border-gray-400 text-sm;
+    @apply border border-gray-200 text-sm;
   }
 
   tbody {
-    @apply divide-y divide-gray-400;
+    @apply divide-y divide-gray-200;
   }
 
   tr {
-    @apply divide-x divide-gray-400;
+    @apply divide-x divide-gray-200;
   }
 
   th {
@@ -44,16 +44,144 @@
   }
 }
 
+@layer utilities {
+  .word-wrap {
+    word-wrap: break-word;
+  }
+
+  .overflow-wrap-anywhere {
+    overflow-wrap: anywhere;
+  }
+
+  .hyphens-auto {
+    hyphens: auto;
+  }
+}
+
+.bg-grid {
+  background-image: linear-gradient(
+      to right,
+      rgba(148, 163, 184, 0.15) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(148, 163, 184, 0.15) 1px,
+      transparent 1px
+    );
+  background-size: 32px 32px;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media print {
   @page {
     size: A4;
+    margin: 0.2cm 0.2cm;
+  }
+  
+  * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  body {
+    font-size: 9pt;
+    line-height: 1.4;
+    background: white;
   }
 
   .pagebreak {
-    page-break-before: always;
+    page-break-before: avoid;
   }
 
-  .html {
-    font-size: "10px";
+  .print\:page-break-before {
+    page-break-before: avoid;
+  }
+
+  h1 {
+    font-size: 18pt;
+    page-break-after: avoid;
+    margin-bottom: 8pt;
+  }
+
+  h2 {
+    font-size: 14pt;
+    page-break-after: avoid;
+    margin-top: 10pt;
+    margin-bottom: 6pt;
+  }
+
+  h3 {
+    font-size: 11pt;
+    page-break-after: avoid;
+    margin-bottom: 4pt;
+  }
+
+  h4 {
+    font-size: 10pt;
+    page-break-after: avoid;
+  }
+
+  table {
+    page-break-inside: auto;
+    font-size: 8pt;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  td, th {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Force table layout to be fixed for better column control */
+  table {
+    table-layout: fixed;
+  }
+
+  .max-w-7xl {
+    max-width: 100% !important;
+  }
+
+  .px-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Report 2 specific optimizations */
+  section {
+    page-break-inside: auto;
+  }
+
+  .print\:grid-cols-3 {
+    column-count: 3;
+    column-gap: 12pt;
+  }
+
+  .bg-white,
+  .bg-slate-50,
+  .bg-emerald-50,
+  .bg-blue-50,
+  .bg-amber-50,
+  .bg-red-50 {
+    break-inside: avoid;
   }
 }
